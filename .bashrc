@@ -13,6 +13,6 @@ PS1=' \[\033[1;36m\]\w \[\033[1;32m\] \[\033[00m\]'
 
 neofetch --ascii_distro Arch_small --disable cpu gpu theme icons resolution kernel title model underline cols
 
-alias bpgcwifi=/home/reiter/scripts/wificonnect.sh
-alias git-push-all=/home/reiter/scripts/git-push-all.sh
-alias mobile-hotspot=/home/reiter/scripts/wifi.sh
+alias bpgcwifi=/home/reiter/scripts/wifi/wificonnect.sh
+alias mobile-hotspot=/home/reiter/scripts/wifi/wifi.sh
+alias git-push-all=/home/reiter/scripts/git-utils/git-push-all.sh
