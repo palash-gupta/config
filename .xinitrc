@@ -1,7 +1,7 @@
 ~/.fehbg &
 
 while true; do
-    xsetroot -name " $(/home/reiter/scripts/batteryicon.sh) | $( date +"󰃭 %A, %d %B |   %R" ) "
+    xsetroot -name " $(/home/reiter/scripts/status/batteryicon.sh) | $( date +"󰃭 %A, %d %B |   %R" ) "
     sleep 5s
 done &
 
