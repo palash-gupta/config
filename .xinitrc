@@ -1,7 +1,7 @@
 ~/.fehbg &
 
 while true; do
-    xsetroot -name "  󰍛 $(free --mega | grep Mem | awk '{print $3 "/" $2 "MB"}') | $(/home/reiter/scripts/status/batteryicon.sh) | $( date +"󰃭 %A, %d %B |   %R" ) "
+    xsetroot -name "    $(free --mega | grep Mem | awk '{print $3 "/" $2 "MB"}') | $(/home/reiter/scripts/status/batteryicon.sh) | $( date +"󰃭 %A, %d %B |   %R" ) "
     sleep 2s
 done &
 

@@ -9,10 +9,30 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 #PS1='\[\033[1;36m\]\u\[\033[00m\]@\[\033[1;36m\]\h \[\033[00m\]\w \$ '
-PS1=' \[\033[1;36m\]\w \[\033[1;32m\] \[\033[00m\]' 
+PS1=' \[\033[1;36m\]\w \[\033[1;32m\]❯ \[\033[00m\]' 
 
-colorscript random
+if [[ $RANDOM -gt 16383 ]]; then
+    colorscript random
+else
+    pokemon-colorscripts -r --no-title
+fi
 echo ""
+
+alias pacman="pacman --color=auto"
+alias yay="yay --color=auto"
+
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias la='exa -al --color=always --group-directories-first --icons' # my preferred listing
+alias ll='exa -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ls='exa -l --color=always --group-directories-first --icons'  # long format
+alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
+alias l=ls
+alias ld='exa -D --color=always --icons'
+
+alias cat="bat"
 
 alias smallfetch="neofetch --ascii_distro Arch_small --disable cpu gpu theme icons resolution kernel title model underline cols"
 alias bpgcwifi=/home/reiter/scripts/wifi/wificonnect.sh
