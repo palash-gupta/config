@@ -32,7 +32,8 @@ alias lt='exa -aT --color=always --group-directories-first --icons' # tree listi
 alias l=ls
 alias ld='exa -D --color=always --icons'
 
-alias cat="bat"
+alias c="bat"
+alias v="vim"
 
 alias smallfetch="neofetch --ascii_distro Arch_small --disable cpu gpu theme icons resolution kernel title model underline cols"
 alias bpgcwifi=/home/reiter/scripts/wifi/wificonnect.sh
