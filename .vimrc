@@ -84,7 +84,7 @@ set nobackup
 set scrolloff=15
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
+set wrap linebreak
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
@@ -123,16 +123,16 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " colorscheme molokai
 colorscheme habamax
+" colorscheme sorbet
 " colorscheme retrobox
 
 set relativenumber
 
 set term=kitty
 
-set wrap linebreak
-
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <c-space> :noh<CR>
 
