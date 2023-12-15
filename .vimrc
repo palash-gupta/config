@@ -179,12 +179,12 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:completor_auto_trigger = 0
 inoremap <expr> <Tab> Tab_Or_Complete()
 
-colorscheme catppuccin_macchiato
+colorscheme catppuccin_mocha
 
 set laststatus=2
 
 let g:lightline = {
-            \ 'colorscheme': 'catppuccin_macchiato',
+            \ 'colorscheme': 'catppuccin_mocha',
       \ }
 
 set noshowmode
