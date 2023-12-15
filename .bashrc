@@ -32,13 +32,20 @@ alias lt='exa -aT --color=always --group-directories-first --icons' # tree listi
 alias l=ls
 alias ld='exa -D --color=always --icons'
 
+alias sl='sl -e -a -F'
+
 alias c="bat"
 alias v="vim"
+
+alias code="codium"
 
 alias smallfetch="neofetch --ascii_distro Arch_small --disable cpu gpu theme icons resolution kernel title model underline cols"
 alias bpgcwifi=/home/reiter/scripts/wifi/wificonnect.sh
 alias mobile-hotspot=/home/reiter/scripts/wifi/wifi.sh
 alias git-push-all=/home/reiter/scripts/git-utils/git-push-all.sh
 
+alias camera="vlc v4l2://:input-slave=alsa://:v4l-vdev="/dev/video0""
+
 # Created by `pipx` on 2023-11-18 20:11:15
 export PATH="$PATH:/home/reiter/.local/bin"
+export PATH=$PATH:/home/reiter/.spicetify

@@ -7,5 +7,5 @@ done &
 
 # xcompmgr -f -r 5  -O .0.37 &
 # picom &
-picom -f -c --backend glx --blur-method dual_kawase --blur-strength 8 &
+picom -f -c -D 6 --backend glx --blur-method dual_kawase --blur-strength 8 --vsync --detect-rounded-corners --shadow-exclude 'bounding_shaped && rounded_corners' &
 exec dwm
