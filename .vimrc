@@ -136,6 +136,8 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 nmap <silent> <c-space> :noh<CR>
 
+nmap <silent> <c-s> :w<CR>
+
 set termguicolors
 
 set encoding=UTF-8
