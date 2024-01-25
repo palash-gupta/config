@@ -190,4 +190,3 @@ let g:lightline = {
       \ }
 
 set noshowmode
-

@@ -1,0 +1,27 @@
+alias l="ls"
+alias ls="exa -l --group-directories-first --icons"
+alias la="exa -la --group-directories-first --icons"
+alias ld="exa --only-dirs --icons"
+alias ll="exa --group-directories-first --icons"
+
+alias v="vim"
+alias r="ranger"
+
+alias mv="mv -n"
+alias rm="rm -I"
+
+alias neofetch="fastfetch"
+alias sl="sl -acdeFG3"
+
+alias firefox="librewolf"
+
+alias bpgcwifi="/home/reiter/scripts/wifi/wificonnect.sh"
+alias camera="vlc --qt-minimal-view v4l2://:input-slave=alsa://:v4l-vdev=/dev/video0"
+
+alias runflask="sudo flask run --host=0.0.0.0 --port=80"
+alias clipserv="sudo /home/reiter/scripts/server/clipboard.sh"
+alias fileserv="sudo /home/reiter/scripts/server/files.sh"
+alias killserv="sudo /home/reiter/scripts/server/kill.sh"
+
+
+alias fehbg="feh --no-fehbg --bg-scale"
