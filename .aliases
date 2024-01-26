@@ -23,5 +23,6 @@ alias clipserv="sudo /home/reiter/scripts/server/clipboard.sh"
 alias fileserv="sudo /home/reiter/scripts/server/files.sh"
 alias killserv="sudo /home/reiter/scripts/server/kill.sh"
 
+alias git-push-all="/home/reiter/scripts/git-utils/git-push-all.sh"
 
 alias fehbg="feh --no-fehbg --bg-scale"
