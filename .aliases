@@ -3,6 +3,7 @@ alias ls="exa -l --group-directories-first --icons"
 alias la="exa -la --group-directories-first --icons"
 alias ld="exa --only-dirs --icons"
 alias ll="exa --group-directories-first --icons"
+alias tree="exa --tree"
 
 alias v="vim"
 alias r="ranger"
@@ -22,6 +23,7 @@ alias runflask="sudo flask run --host=0.0.0.0 --port=80"
 alias clipserv="sudo /home/reiter/scripts/server/clipboard.sh"
 alias fileserv="sudo /home/reiter/scripts/server/files.sh"
 alias killserv="sudo /home/reiter/scripts/server/kill.sh"
+alias serv="sudo /home/reiter/scripts/server/connectivity.sh"
 
 alias git-push-all="/home/reiter/scripts/git-utils/git-push-all.sh"
 
