@@ -9,6 +9,7 @@ map R rotate
 unmap f
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
+map b feedkeys ":blist<Tab>"
 
 # Open document in fit-width mode by default
 set adjust-open "best-fit"
@@ -19,7 +20,7 @@ set pages-per-row 1
 #stop at page boundries
 set scroll-page-aware "true"
 set scroll-full-overlap 0.01
-set scroll-step 100
+set scroll-step 30
 
 #zoom settings
 set zoom-min 10

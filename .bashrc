@@ -23,14 +23,15 @@ __prompt_command() {
 #PS1='\[\033[1;36m\]\u\[\033[00m\]@\[\033[1;36m\]\h \[\033[00m\]\w \$ '
 #PS1=' \[\033[1;36m\]\w \[\033[1;32m\]❯ \[\033[00m\]' 
 
-pokemon-colorscripts -r --no-title
+krabby random
+echo ""
 echo ""
 
 source /home/reiter/.aliases
 
 # have a common working directory for the entire system, new terminals will open at the last accessed location
 global_cd () {
-    cd $1
+    cd $@
     echo $PWD > /tmp/wd
 }
 

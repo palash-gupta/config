@@ -7,6 +7,7 @@ alias tree="exa --tree"
 
 alias v="vim"
 alias r="ranger"
+alias z="zathura"
 
 alias mv="mv -n"
 alias rm="rm -I"
