@@ -81,7 +81,7 @@ set expandtab
 set nobackup
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
-set scrolloff=15
+"set scrolloff=15
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
 set wrap linebreak
@@ -137,6 +137,9 @@ nmap <silent> <c-l> :wincmd l<CR>
 nmap <silent> <c-space> :noh<CR>
 
 nmap <silent> <c-s> :w<CR>
+inoremap <silent> <c-s> <ESC>:w<CR>a
+
+nmap <silent> <c-o> o<ESC>O
 
 set termguicolors
 
@@ -150,6 +153,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'tmsvg/pear-tree'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
 
 " Use TAB to complete when typing words, else inserts TABs as usual.  Uses

@@ -1,14 +1,15 @@
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
 echo no > /tmp/battery-notification
+echo 0 > /tmp/audio-sink
 echo discharging > /tmp/battery-charging-notification
 echo "/home/reiter" > /tmp/wd
 mkdir -p /tmp/screenshots
 
-feh --no-fehbg --bg-scale --randomize -r /home/reiter/Pictures/wallpapers/
+feh --no-fehbg --bg-scale --randomize -r /home/reiter/Pictures/wallpapers/evening-sky.png
 
 while true; do
-    xsetroot -name "    $(free --mega | grep Mem | awk '{print $3 "/" $2 "MB"}') | $(/home/reiter/scripts/wifi/wifistatus.sh) | $(/home/reiter/scripts/status/volume.sh) | $(/home/reiter/scripts/status/batteryicon.sh) | $( date +"󰃭 %A, %d %B |   %R" ) "
+    xsetroot -name "$(/home/reiter/scripts/status/statusbar.sh)"
     sleep 2s
 done &
 
