@@ -23,9 +23,7 @@ __prompt_command() {
 #PS1='\[\033[1;36m\]\u\[\033[00m\]@\[\033[1;36m\]\h \[\033[00m\]\w \$ '
 #PS1=' \[\033[1;36m\]\w \[\033[1;32m\]❯ \[\033[00m\]' 
 
-krabby random
-echo ""
-echo ""
+krabby random | tee >(head -1>>/tmp/pokehistory) >(tail -n+2) >/dev/null
 
 source /home/reiter/.aliases
 
@@ -41,3 +39,4 @@ alias cd="global_cd"
 # Created by `pipx` on 2023-11-18 20:11:15
 export PATH="$PATH:/home/reiter/.local/bin"
 export PATH=$PATH:/home/reiter/.spicetify
+export PATH=$PATH:/home/reiter/.cargo/bin

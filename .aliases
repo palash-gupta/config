@@ -29,3 +29,6 @@ alias serv="sudo /home/reiter/scripts/server/connectivity.sh"
 alias git-push-all="/home/reiter/scripts/git-utils/git-push-all.sh"
 
 alias fehbg="feh --no-fehbg --bg-scale"
+
+alias airdopes="/home/reiter/scripts/bluetooth/airdopes.sh"
+alias airdopes_disconnect="/home/reiter/scripts/bluetooth/airdopes_disconnect.sh"
