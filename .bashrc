@@ -29,11 +29,11 @@ source /home/reiter/.aliases
 
 # have a common working directory for the entire system, new terminals will open at the last accessed location
 global_cd () {
-    cd $@
+    cd "$@"
     echo $PWD > /tmp/wd
 }
 
-cd $(cat /tmp/wd)
+cd "$(cat /tmp/wd)"
 alias cd="global_cd"
 
 # Created by `pipx` on 2023-11-18 20:11:15

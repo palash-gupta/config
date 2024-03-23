@@ -18,7 +18,10 @@ alias sl="sl -acdeFG3"
 alias firefox="librewolf"
 
 alias bpgcwifi="/home/reiter/scripts/wifi/wificonnect.sh"
-alias camera="vlc --qt-minimal-view v4l2://:input-slave=alsa://:v4l-vdev=/dev/video0"
+alias camera="vlc --qt-minimal-view --video-filter='transform{type="hflip"}' v4l2://:input-slave=alsa://:v4l-vdev=/dev/video0"
+alias blahaj=" display3d /home/reiter/Downloads/blahaj/blahaj.obj -t 0,0,5.5"
+alias screencap="ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0+0,0 output.mp4"
+alias screenkeys="screenkey --opacity 0.0 --font-color yellow -s small"
 
 alias runflask="sudo flask run --host=0.0.0.0 --port=80"
 alias clipserv="sudo /home/reiter/scripts/server/clipboard.sh"
